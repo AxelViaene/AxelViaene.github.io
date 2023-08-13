@@ -1,6 +1,6 @@
 
 window.onload =() => {
-    window.location.href="../docs/html/login.html"
+    window.location.href="https://axelviaene.github.io/docs/html/login.html"
 }
 
 
