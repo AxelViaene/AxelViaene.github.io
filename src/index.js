@@ -1,7 +1,6 @@
 
 window.onload =() => {
-
-console.log('test')
+    window.location.href="../docs/html/login.html"
 }
 
 

@@ -1,1 +1,1 @@
-window.onload=()=>{window.location.href="../html/login.html"};
+window.onload=()=>{window.location.href="../docs/html/login.html"};
