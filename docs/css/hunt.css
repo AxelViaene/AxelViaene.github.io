@@ -1,0 +1,303 @@
+@import "./master.css";
+
+
+/* ----------GRID--------- */
+main {
+    grid-template-rows: 6vw 4vw 0.5vw repeat(3, 4vw) 12vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.motivation {
+    grid-column: 7/9;
+    grid-row: 1/2;
+    margin-top: 30px;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+/* ----------LEFT-SIDE--------- */
+
+#carousel {
+    grid-row: 2/7;
+    grid-column: 4/6;
+    overflow: hidden;
+    position: relative;
+}
+
+#carousel .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+}
+
+#carousel .activeWeapon {
+    display: block;
+}
+
+.greatsword {
+    display: flex;
+    background-color: white;
+    margin: none;
+    border: 5px solid #EFEFEF;
+    border-radius: 5px;
+}
+
+.gsInternal {
+    width: 21vw;
+}
+
+.gsTop {
+    border-bottom: 2px solid #EFEFEF;
+    margin-bottom: 1.4vw;
+    margin-top: -1vw;
+    background-color: #EFEFEF;
+    position: relative;
+}
+
+.gsName {
+    padding-top: 10px;
+    font-size: 1vw;
+    color: #130D0C;
+    text-align: center;
+}
+
+.gsIcon {
+    max-width: 8vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0vw;
+    padding-bottom: 1vw;
+}
+
+.gsStatsLeft {
+    font-size: 1vw;
+    float: left;
+    margin-left: 0.5vw;
+}
+
+.gsStatsRight {
+    float: right;
+    overflow: visible;
+    font-size: 0.8vw;
+}
+
+.gsAttack {
+    font-size: 1vw;
+    float: inline-end;
+    text-align: center;
+    margin-right: 1vw;
+}
+
+.element {
+    font-size: 0.8vw;
+    display: flex;
+    align-items: left;
+    float: right;
+    margin-right: 0.5vw;
+}
+
+.gsElementDamage {
+    margin: 0;
+    margin-right: 2px;
+}
+
+.noElement {
+    font-size: 1vw;
+    margin-right: 0.5vw;
+}
+
+.gsElement {
+    max-width: 1.8vw;
+    float: right;
+    display: block;
+    margin-right: 0.5vw;
+}
+
+.leftCarousel {
+    grid-row: 4/5;
+    grid-column: 3/4;
+}
+
+.rightCarousel {
+    grid-row: 4/5;
+    grid-column: 6/7;
+}
+
+.carouselPosition {
+    grid-row: 6/7;
+    grid-column: 4/6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#previousWeapon {
+    scale: 80%;
+    float: right;
+    cursor: pointer;
+}
+
+#nextWeapon {
+    scale: 80%;
+    float: left;
+    cursor: pointer;
+}
+
+/* ----------RIGHT-SIDE--------- */
+
+.rankSelect {
+    grid-column: 10/14;
+    grid-row: 2/3;
+    /* background-color: #a64d3d; */
+    position: relative;
+    font-size: 1.5vw;
+}
+
+.rankSelect p {
+    margin-bottom: 10px;
+}
+
+.rankIcon {
+    max-width: 2vw;
+}
+
+.regionSelect {
+    grid-column: 10/12;
+    grid-row: 4/5;
+    width: 200px;
+    height: 50px;
+    background-color: #EFEFEF;
+    position: relative;
+    display: inline-block;
+}
+
+#regionButton {
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #EFEFEF;
+    border-radius: 5px;
+}
+
+#regionDropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #EFEFEF;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    ;
+    z-index: 1;
+}
+
+.regionOption {
+    font-size: 18px;
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.regionOption:hover {
+    background-color: #F5F5F5;
+}
+
+
+/* Hunt button */
+
+.huntDiv {
+    background-color: white;
+    grid-row: 6/7;
+    grid-column: 7/9;
+    position: relative;
+
+}
+
+.centerHunt {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#huntButton {
+    background-color: white;
+    border: 5px solid #EFEFEF;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: 0.3s ease;
+}
+
+#huntButton:hover {
+    background-color: #EFEFEF;
+    cursor: pointer;
+}
+
+/* ----------OVERLAY--------- */
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+#huntOverlay {
+    background-color: #EFEFEF;
+    margin: auto;
+    height: 40vw;
+    max-width: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.rankMonster {
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    margin-top: 1vw;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.overlayMonster {
+    max-width: 20vw;
+    display: block;
+}
+
+.huntResult {
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    margin-top: 2vw;
+    font-size: 3vw;
+    font-weight: bold;
+    color: #333;
+}
+
+.huntMessage {
+    font-weight: 100;
+    margin-top: 2vw;
+    margin-bottom: 0;
+}

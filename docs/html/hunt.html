@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="../javascript/hunt.js"></script>
+    <!-- <script src="../javascript/auth.js"></script> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/hunt.css">
+    <title>Hunt | PukeiDex</title>
+    <link rel="shortcut icon" href="../icons/PukeiDex_Icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="navigation">
+                <img id="PukeiDex_Icon" src="../icons/PukeiDex_Icon.png" alt="">
+                <li id="PukeiDex">PukeiDex</li>
+                <li><a href="armory.html">Armory</a></li>
+                <li class="active"><a href="hunt.html">Hunt</a></li>
+                <li><a href="encyclopedia.html">Encyclopedia</a></li>
+                <li id="authname">q</li>
+                <li><button id="logoutButton">Logout</button></li>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class="motivation">
+            <p>Prepare yourself</p>
+        </div>
+
+
+        <div class="leftCarousel">
+            <img id="previousWeapon" src="../icons/arrow left.png" alt="">
+        </div>
+        <div id="carousel">
+
+
+        </div>
+        <div class="rightCarousel">
+            <img id="nextWeapon" src="../icons/arrow right.png" alt="">
+        </div>
+        <div class="carouselPosition">
+            <p id="carouselNumber"></p>
+        </div>
+
+
+
+        <div class="rankSelect">
+            <p>Monster rank</p>
+            <img class="rankIcon" src="../icons/star-empty.png" alt="">
+            <img class="rankIcon" src="../icons/star-empty.png" alt="">
+            <img class="rankIcon" src="../icons/star-empty.png" alt="">
+            <img class="rankIcon" src="../icons/star-empty.png" alt="">
+            <img class="rankIcon" src="../icons/star-empty.png" alt="">
+            <img class="rankIcon" src="../icons/star-empty.png" alt="">
+            <img class="rankIcon" src="../icons/star-empty.png" alt="">
+            <img class="rankIcon" src="../icons/star-empty.png" alt="">
+        </div>
+
+        <div class="regionSelect">
+            <button id="regionButton">Select region</button>
+            <div id="regionDropdown">
+                <p class="regionOption">Ancient Forest</p>
+                <p class="regionOption">Wildspire Waste</p>
+                <p class="regionOption">Coral Highlands</p>
+                <p class="regionOption">Rotten Vale</p>
+                <p class="regionOption">Elder's Recess</p>
+            </div>
+        </div>
+
+        <div class="huntDiv">
+            <div class="centerHunt">
+                <button id="huntButton">HUNT</button>
+            </div>
+        </div>
+
+        <div id="overlay">
+            <div id="huntOverlay">
+
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

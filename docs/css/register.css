@@ -1,0 +1,127 @@
+@import "./master.css";
+
+/* ----------GRID--------- */
+main {
+    grid-template-rows: 6vw repeat(7, 4vw) 12vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    grid-row: 2/3;
+    grid-column: 7/9;
+    font-size: 2vw;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PukeiDex {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    padding-right: 5px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.PukeiDex:hover {
+    transform: scale(1.1);
+}
+
+.registerBox {
+    grid-row: 4/8;
+    grid-column: 5/11;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#form {
+    height: 23vw;
+    color: #130D0C;
+    background-color: #7A7A7A;
+    display: grid;
+    grid-template-rows: repeat(15, 1fr);
+    grid-template-columns: repeat(11, 1fr);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.username {
+    grid-row: 4/5;
+    grid-column: 3/9;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.email {
+    grid-row: 6/7;
+    grid-column: 3/9;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.password {
+    grid-row: 8/9;
+    grid-column: 2/9;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.confirmpassword {
+    grid-row: 10/11;
+    grid-column: 3/9;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#userLabel,
+#emailLabel,
+#passwordLabel,
+#confirmpasswordLabel {
+    padding: 0.5rem;
+}
+
+#registerUsername,
+#registerEmail,
+#registerPassword,
+#confirmregisterPassword {
+    margin-bottom: 0.5rem;
+}
+
+#registerButton {
+    grid-row: 13/14;
+    grid-column: 5/8;
+    justify-self: center;
+    padding: 0.5rem 1rem;
+    background-color: #EFEFEF;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.loginMessage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 15/16;
+    grid-column: 3/10;
+}
+
+.loginMessage p {
+    margin-right: 10px;
+}
+
+#loginButton {
+    border: none;
+    cursor: pointer;
+    background-color: #EFEFEF;
+    padding: 0.3rem 0.4rem;
+    border-radius: 5px;
+}
